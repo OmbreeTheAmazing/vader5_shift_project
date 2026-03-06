@@ -1,0 +1,32 @@
+{
+  "controller_name_contains": "Vader 5",
+  "poll_hz": 250,
+  "aliases": {
+    "lb": "left_shoulder",
+    "rb": "right_shoulder",
+    "l1": "left_shoulder",
+    "r1": "right_shoulder",
+    "m1": "right_paddle1",
+    "m2": "right_paddle2",
+    "m3": "left_paddle1",
+    "m4": "left_paddle2"
+  },
+  "base_overrides": {
+    "m1": "x",
+    "m2": "b",
+    "m3": "y",
+    "m4": "a"
+  },
+  "layers": [
+    {
+      "name": "lb_dpad",
+      "when_held": "lb",
+      "overrides": {
+        "m1": "dpad_up",
+        "m2": "dpad_down",
+        "m3": "dpad_right",
+        "m4": "dpad_left"
+      }
+    }
+  ]
+}
